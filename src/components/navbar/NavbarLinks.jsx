@@ -10,7 +10,7 @@ import { Link } from 'react-scroll';
 ];
 const NavbarLinks = () => {
   return (
-    <ul className=' flex gap-6 text-white font-bold text-center lg:flex-row  sm:flex-col lg:relative sm:absolute sm:top-[120%] left-[50%] -translate-x-[50%] lg:text-md sm:text-xl sm:bg-cyan/30 backdrop-blur-lg lg:bg-black sm:w-full py-4'>
+<ul className="fixed top-0 left-0 w-full bg-black/50 backdrop-blur-md shadow-md flex gap-6 text-white font-bold text-center lg:flex-row sm:flex-col lg:relative sm:absolute sm:top-[120%] left-[50%] -translate-x-[50%] lg:text-md sm:text-xl sm:bg-cyan/30 lg:bg-black sm:w-full py-4 transition-all duration-300">
         {links.map((link,index) => {
             return(
                 <li key={index} className='group'>
