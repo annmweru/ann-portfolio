@@ -1,5 +1,5 @@
 import React from 'react'
-import ContactForm from './ContactForm.JSX'
+import ContactForm from './ContactForm.jsx'
 
 const ContactMeLeft = () => {
   return (
