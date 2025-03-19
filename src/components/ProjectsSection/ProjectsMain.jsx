@@ -11,7 +11,7 @@ const projects= [
         description:'A digital land management system for seamless property registration and transfer.',
         techStack: 'Angular, TypeScript, TailwindCSS,',
         align:'right',
-        image:'/public/images/ardhisasa.png',
+        image:'/images/ardhisasa.png',
         link:'https://ardhisasa.lands.go.ke/home'
     },
     {
