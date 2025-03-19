@@ -11,7 +11,7 @@ const projects= [
         description:'A digital land management system for seamless property registration and transfer.',
         techStack: 'Angular, TypeScript, TailwindCSS,',
         align:'right',
-        image:'../../../public/images/ardhisasa.png',
+        image:'/public/images/ardhisasa.png',
         link:'https://ardhisasa.lands.go.ke/home'
     },
     {
@@ -20,7 +20,7 @@ const projects= [
         description:'A credit reporting platform providing financial risk assessments and scoring.',
         techStack: 'Angular, TypeScript, BootStrap',
         align:'left',
-        image:'../../../public/images/metropol.png',
+        image:'/images/metropol.png',
         link:'https://metropol.co.ke/'
     },
     {
@@ -29,7 +29,7 @@ const projects= [
         description:'A portfolio showcasing deployment on Heroku and Netlify.',
         techStack: 'HTML, CSS, JavaScript,Firebase',
         align:'right',
-        image:'../../../public/images/netlify.png',
+        image:'/images/netlify.png',
         link:'https://annmweru-heroku.netlify.app/'
     }
 ]
