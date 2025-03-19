@@ -32,13 +32,6 @@ const projects= [
         image:'../../../public/images/netlify.png',
         link:'https://annmweru-heroku.netlify.app/'
     }
-//   {
-//     name:'GEOPRO PROJECT',
-//     year:'MARCH2020',
-//     align:'left',
-//     image:'../../../public/images/website-img-3.jpg',
-//     link:'#'
-// },
 ]
 const ProjectsMain = () => {
   return (
