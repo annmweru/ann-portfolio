@@ -15,7 +15,7 @@ const NavbarMain = () => {
         <div className='flex justify-between w-full max-w-[1200px] max-auto bg-black items-center p-6 rounded-r-full rounded-l-full border-[1.5px] border-orange'> 
             <NavbarLogo/>
 
-           <div className={`${menuOpen ? "sm:block" : "sm:hidden"} lg:block`}>
+<div className={`${menuOpen ? "block" : "hidden"} lg:block`}>
   <NavbarLinks />
 </div>
 
@@ -32,6 +32,7 @@ const NavbarMain = () => {
         </nav>
   )
 }
-// {`$menuOpen ? "sm:block": "sm:hidden"`}
-
 export default NavbarMain
+
+
+

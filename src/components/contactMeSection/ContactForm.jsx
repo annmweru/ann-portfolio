@@ -52,7 +52,7 @@ const ContactForm = () => {
           type='text'
           placeholder='Your Name'
           required
-  className='rounded-lg bg-[#877e6b] p-2 text-black placeholder:text-white border border-[#E6CBA8] focus:border-cyan focus:outline-none'
+  className='rounded-lg p-2 bg-transparent border border-gray-600 text-white placeholder-gray-400border-[#E6CBA8] focus:border-cyan focus:outline-none'
           value={name}
           onChange={handleName}
         />
@@ -61,7 +61,7 @@ const ContactForm = () => {
           type='email'
           placeholder='Your Email'
           required
-  className='rounded-lg bg-[#877e6b] p-2 text-black placeholder:text-white border border-[#E6CBA8] focus:border-cyan focus:outline-none'
+  className='rounded-lg p-2 bg-transparent border border-gray-600 text-white placeholder-gray-400border-[#E6CBA8] focus:border-cyan focus:outline-none'
           value={email}
           onChange={handleEmail}
         />
@@ -70,7 +70,7 @@ const ContactForm = () => {
           placeholder='Message'
           rows='9'
           required
-  className='rounded-lg bg-[#877e6b] p-2 text-black placeholder:text-white border border-[#E6CBA8] focus:border-cyan focus:outline-none'
+  className='rounded-lg p-2 bg-transparent border border-gray-600 text-white placeholder-gray-400border-[#E6CBA8] focus:border-cyan focus:outline-none'
           value={message}
           onChange={handleMessage}
         />
