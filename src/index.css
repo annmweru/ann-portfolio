@@ -7,7 +7,7 @@ body {
 }
 
 @theme {
-  --breakpoint-sm:640px;
+  --breakpoint-sm:350px;
   --breakpoint-md:768px;
   --breakpoint-lg:1024px;
   --breakpoint-xl:1280px;
@@ -19,20 +19,14 @@ body {
 
 
   --color-darkBrown: #1E1E1E;
-    /* More modern */
     --color-brown: #252525;
-    /* Less earthy, more neutral */
     --color-black: #131313;
     --color-white: #EDEDED;
-    /* Slightly off-white for softness */
-  
     --color-cyan: #00A9FF;
-    /* More refined electric blue */
     --color-lightCyan: #5CC9F5;
     --color-darkCyan: #0079A8;
   
     --color-orange: #FF6F00;
-    /* Neon orange for a sharper pop */
     --color-lightOrange: #FFB74D;
     --color-darkOrange: #D4661F;
   
