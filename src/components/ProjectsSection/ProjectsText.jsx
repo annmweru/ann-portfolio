@@ -1,9 +1,5 @@
 import React from 'react'
 
-
-
-
-
 const ProjectsText = () => {
   return (
     <div  id="projects" className=' flex flex-col items-center mt-[100px]'>
