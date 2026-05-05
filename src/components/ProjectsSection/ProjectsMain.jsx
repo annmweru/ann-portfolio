@@ -5,15 +5,33 @@ import { motion } from 'framer-motion'
 import { fadeIn } from '../../../src/framerMotion/variants'
 
 const projects= [
+         {
+        name:'Job tracking system',
+        year:'MARCH 2026',
+        description:'A job tracking system for managing and monitoring application tasks and progress.',
+        techStack: 'React, reactMotion, TailwindCSS',
+        align:'right',
+        image:'/images/jobTrack.png',
+        link:'https://annah-jobtrack.netlify.app/'
+    },       {
+        name:'Portfolio Website',
+        year:'MARCH 2026',
+        description:'A personal portfolio website to showcase my skills and projects.',
+        techStack: 'React, reactMotion, TailwindCSS',
+        align:'left',
+        image:'/images/portfolio.png',
+        link:'https://annahmweru-dev.netlify.app/'
+    },
    {
         name:'Ardhisasa Land Portal',
         year:'MARCH 2022',
         description:'A digital land management system for seamless property registration and transfer.',
-        techStack: 'Angular, TypeScript, TailwindCSS,',
+        techStack: 'Angular, TypeScript, TailwindCSS',
         align:'right',
         image:'/images/ardhisasa.png',
         link:'https://ardhisasa.lands.go.ke/home'
     },
+  
     {
         name:'Metropol Credit Reporting System',
         year:'MARCH 2021',

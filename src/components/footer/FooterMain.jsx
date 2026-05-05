@@ -50,7 +50,7 @@ const FooterMain = () => {
 
       {/* Copyright Section */}
       <p className="max-w-[1200px] mx-auto text-center mt-4 mb-6 text-sm text-gray-500">
-        © 2025 Annah Mweru | All Rights Reserved
+        © 2026 Annah Mweru | All Rights Reserved
       </p>
     </div>
   );
