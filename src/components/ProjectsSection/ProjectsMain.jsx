@@ -5,15 +5,31 @@ import { motion } from 'framer-motion'
 import { fadeIn } from '../../../src/framerMotion/variants'
 
 const projects= [
-         {
+           {
+        name:'flowBoard',
+        year:'MARCH 2026',
+        description:'Flowboard is a kanban-style project management web app featuring task cards with assignees, priority tags, and progress tracking across customizable workflow columns built for teams that need clarity at a glance',
+        techStack: 'Angular, firebase, ngRx, TailwindCSS',
+        align:'right',
+        image:'/images/flowboard.png',
+        link:'https://github.com/annmweru/Flowboard'
+    },     {
         name:'Job tracking system',
         year:'MARCH 2026',
         description:'A job tracking system for managing and monitoring application tasks and progress.',
         techStack: 'React, reactMotion, TailwindCSS',
-        align:'right',
+        align:'left',
         image:'/images/jobTrack.png',
         link:'https://annah-jobtrack.netlify.app/'
-    },       {
+    },     {
+        name:'Product listing website',
+        year:'June 2025',
+        description:'A product listing website for showcasing various products prices,out of stock, delete,edit and add to cart.',
+        techStack: 'Angular, NgRx, Dialogs, Reactive Forms,RxJS Operators,SASS',
+        align:'right',
+        image:'/images/productList.png',
+        link:'https://github.com/annmweru/product-list-app'
+    }, {
         name:'Portfolio Website',
         year:'MARCH 2026',
         description:'A personal portfolio website to showcase my skills and projects.',
