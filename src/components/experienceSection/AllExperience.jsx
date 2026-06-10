@@ -6,16 +6,26 @@ import { motion } from 'framer-motion'
 import { fadeIn } from '../../../src/framerMotion/variants'
 
 const experiences = [
- {
+ 
+  {
+        job: 'Software Engineer',
+        company: 'WoodsMan Technologies',
+        date: 'June 2026 - Present',
+        responsibilities: [
+            ' Building and consuming RESTful APIs connecting Angular frontend modules to Node.js backend services, ensuring clean data contracts, validation, and error handling across the stack.',
+            'Collaborating with operations and logistics stakeholders to translate business requirements into technical solutions that address real transport and fuel management workflows.',   
+            'Managing and querying PostgreSQL and MongoDB databases, designing schemas and writing optimised queries to support operational data needs across the business.', 
+            'Collaborating with operations and logistics stakeholders to translate business requirements into technical solutions that address real transport and fuel management workflows.'   
+            
+        ]
+    },   {
         job: 'Frontend Developer',
-        company: 'I&M Bank ',
-        date: 'Nov 2025 - Present',
+        company: 'I&M Bank Kenya',
+        date: 'Nov 2025 - May 2026',
         responsibilities: [
             'Delivered a high-volume multicurrency prepaid card platform featuring Mastercard international card capabilities including card listing, real-time balance visibility, and full transaction management for multi-currency wallets.',
             'Implemented end-to-end statement services covering on-demand PDF generation, paginated transaction history, email delivery, and in-browser document viewing, integrating with backend microservices via RESTful API contracts.',
-            'Developing and maintaining production Angular journeys on the Backbase Engagement Banking Platform, working within the Journey Architecture model extending and customising pre-built Backbasejourneys and SDK components rather than building from scratch, enabling faster delivery aligned with Backbase best practices.',
             'Built, the "Fikisha Card Goal Warning" features a real-time alerting system that surfaces expected impacts of deposits and withdrawals to improve customer financial transparency.',
-            'Enhanced account verification API integration for local transfer payments, ensuring accurate pre-transaction account validation and improving reliability of payment processing flows.',
             'Led the migration of Angular version 12 to Angular 18, modernising the codebase to leverage standalone components, updated lifecycle APIs, and improved build performance ensuring compatibility with the latest Backbase SDK versions and reducing technical debt across the platform.' 
             
         ]
