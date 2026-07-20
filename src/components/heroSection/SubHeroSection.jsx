@@ -2,16 +2,16 @@ import React from 'react'
 import { motion } from 'framer-motion'
 
 const stats = [
-  { number: '5+',   label: 'Years',       sub: 'Experience' },
-  { number: 'KCNA', label: 'Certified',   sub: 'Kubernetes & Cloud Native' },
-  { number: '35%',  label: 'API Latency', sub: 'Reduced at Metropol' },
-  { number: '1M+',  label: 'Users',       sub: 'Impacted' },
+  { number: '5+', label: 'Years', sub: 'Professional Experience' },
+  { number: 'KCNA', label: 'Certified', sub: 'Cloud Native Associate' },
+  { number: '50%', label: 'Faster', sub: 'Initial Load Time' },
+  { number: '35%', label: 'Improved', sub: 'API Performance' },
 ]
 
 const SubHeroSection = () => {
   return (
     <div className="w-full bg-brown py-6 px-4">
-      <div className="max-w-[1200px] mx-auto border-[0.5px] border-lightGrey/30 rounded-xl grid grid-cols-2 md:grid-cols-4 overflow-hidden">
+      <div className="max-w-[1200px] mx-auto grid grid-cols-2 md:grid-cols-4">
         {stats.map((stat, index) => (
           <motion.div
             key={index}
@@ -40,5 +40,3 @@ const SubHeroSection = () => {
 }
 
 export default SubHeroSection
-
-

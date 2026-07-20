@@ -8,13 +8,16 @@ const AboutMeText = () => {
   return (
     <div className=' flex flex-col md:items-start sm:items-center md:text-left'>
         <h2 className='text-6xl text-cyan mb-10' >About Me</h2>
-        <p className=' text-white'> My work spans government platforms, fintech, and client-facing products — and I bring the same standard to all of them: clean architecture, performant code, and interfaces that actually make sense to the people using them.
+        <p className=' text-white'> 
+I'm a software developer with over five years of experience building Angular applications across government, fintech, and client-facing products. I focus on creating scalable, maintainable, and high-performance software that delivers great user experiences.
 
-Most frontend developers stop at the browser. I went further I'm KCNA certified in Kubernetes and Cloud Native fundamentals, which means I understand the full journey from writing a component to shipping and running it in production. It's a rare combination, and it makes me a stronger developer and a better collaborator with backend and DevOps teams.
+As a KCNA-certified professional, I understand cloud-native principles and how applications move from development to production, enabling me to collaborate effectively with backend and DevOps teams.
 
-Some of what I've done: led a zero-downtime Angular v8-to-v16 migration on a live government system, built complex multi-stakeholder approval workflows for a national land registry platform, reduced API latency by 35% at a credit bureau, and mentored junior developers while acting as interim team lead.
+Highlights of my experience include leading a zero-downtime migration from Angular 8-18, building complex approval workflows for a national land registry platform, improving API performance by 35%, and mentoring junior developers while serving as an interim team lead.
 
-Right now I'm deepening my full-stack skills with NestJS, adding Docker and CI/CD to my projects, and working toward my CKA certification. I'm actively looking for remote or Nairobi-based roles where I can build great products and keep growing.</p>
+I'm currently expanding into backend development with Java and Spring Boot while strengthening my skills in Docker, CI/CD, and Kubernetes. I'm seeking remote or Nairobi-based opportunities to build scalable, production-ready applications and continue growing as a full-stack developer.
+
+</p>
         <button    onClick={scrollToProjects}  className=' border border-orange rounded-full py-2 px-4 text-lg -flex items-center mt-10 hover:bg-orange transition-all duration-500 cursor-pointer md:self-start sm:self-center text-white hover:text-cyan'>My Projects</button>
         
         </div>

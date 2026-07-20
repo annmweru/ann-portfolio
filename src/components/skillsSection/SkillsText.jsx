@@ -1,5 +1,51 @@
 import React, { useEffect, useRef } from 'react'
 
+const skillGroups = [
+  {
+    category: 'Frontend',
+    accent: 'cyan',
+    skills: ['Angular 8–18', 'TypeScript', 'RxJS · NgRx', 'React', 'JavaScript ES6+', 'Tailwind CSS', 'SCSS / SASS']
+  },
+  {
+    category: 'Backend',
+    accent: 'orange',
+    skills: ['Java', 'REST APIs', 'SOAP/XML', 'JWT','OAuth2','PostgreSQL']
+  },
+  {
+    category: 'Cloud',
+    accent: 'teal',
+    skills: ['Kubernetes', 'Docker', 'GitHub Actions']
+  },
+  {
+    category: 'Tools',
+    accent: 'neutral',
+    skills: ['Cypress · Jest', 'WCAG Accessibility', 'Figma → Code']
+  }
+]
+
+const accentStyles = {
+  cyan: {
+    cardBorder: 'border-cyan-500/25',
+    heading: 'text-cyan-300',
+    pill: 'bg-cyan-950/50 border-cyan-500/30 text-cyan-300 hover:border-cyan-400/60 hover:text-cyan-200'
+  },
+  orange: {
+    cardBorder: 'border-orange-500/25',
+    heading: 'text-orange-300',
+    pill: 'bg-orange-950/50 border-orange-500/30 text-orange-300 hover:border-orange-400/60 hover:text-orange-200'
+  },
+  teal: {
+    cardBorder: 'border-teal-500/25',
+    heading: 'text-teal-300',
+    pill: 'bg-teal-950/50 border-teal-500/30 text-teal-300 hover:border-teal-400/60 hover:text-teal-200'
+  },
+  neutral: {
+    cardBorder: 'border-white/10',
+    heading: 'text-gray-300',
+    pill: 'bg-white/5 border-white/10 text-gray-400 hover:border-white/20 hover:text-gray-300'
+  }
+}
+
 const SkillsText = () => {
   const containerRef = useRef(null)
 
@@ -31,68 +77,44 @@ const SkillsText = () => {
       {/* Intro paragraph */}
       <p className='text-lg text-center text-gray-300 max-w-2xl leading-relaxed mb-4'>
         I build{' '}
-        <span className='text-cyan-400 font-semibold'>production-ready Angular applications</span>
-        {' '}— from government-scale platforms to client-facing SPAs. Five years of it, across
-        complex state management, REST and SOAP/XML integrations, and zero-downtime migrations.
-      </p>
-
-      <p className='text-lg text-center text-gray-300 max-w-2xl leading-relaxed mb-4'>
-        What makes me different: I'm{' '}
-        <span className='text-cyan-400 font-semibold'>KCNA certified</span>
-        {' '}in Kubernetes and Cloud Native fundamentals — one of the few frontend developers
-        who understands how an app runs in production, not just how it looks in the browser.
-        I containerise projects, set up CI/CD pipelines, and think beyond the component tree.
-      </p>
-
-      <p className='text-lg text-center text-gray-300 max-w-2xl leading-relaxed mb-10'>
-        I'm also expanding into{' '}
-        <span className='text-orange-400 font-semibold'>React and NestJS</span>
-        {' '}— building full-stack projects that sharpen my thinking end-to-end.
+        <span className='text-cyan-400 font-semibold'>production-ready web applications with Angular,</span>
+        {' '}backed by over five years of professional experience delivering solutions for government, 
+        fintech, and client-facing products. Alongside frontend development, I'm expanding into Java and Spring Boot while strengthening my cloud-native and DevOps expertise.
       </p>
 
       {/* KCNA callout pill */}
       <div className='flex items-center gap-3 bg-cyan-950/40 border border-cyan-500/20 rounded-full px-6 py-3 mb-10'>
         <span className='w-2 h-2 rounded-full bg-cyan-400 animate-pulse flex-shrink-0' />
         <span className='text-sm text-cyan-300 font-medium'>
-          KCNA Certified — Kubernetes & Cloud Native Essentials · Linux Foundation
+          KCNA Certified • Cloud-Native Development & Kubernetes Fundamentals
         </span>
       </div>
 
-      {/* Skill tags */}
-      <div className='flex flex-wrap justify-center gap-2 max-w-3xl'>
-        {[
-          { label: 'Angular (v8–v16)',  color: 'cyan' },
-          { label: 'TypeScript',        color: 'cyan' },
-          { label: 'RxJS · NgRx',       color: 'cyan' },
-          { label: 'React',             color: 'orange' },
-          { label: 'JavaScript ES6+',   color: 'neutral' },
-          { label: 'Tailwind CSS',      color: 'cyan' },
-          { label: 'SCSS / SASS',       color: 'neutral' },
-          { label: 'Kubernetes',        color: 'cyan' },
-          { label: 'Docker',            color: 'neutral' },
-          { label: 'GitHub Actions',    color: 'neutral' },
-          { label: 'NestJS',            color: 'orange' },
-          { label: 'REST · SOAP/XML',   color: 'neutral' },
-          { label: 'JWT · OAuth 2.0',   color: 'neutral' },
-          { label: 'Cypress · Jest',    color: 'neutral' },
-          { label: 'PostgreSQL',        color: 'neutral' },
-          { label: 'WCAG Accessibility', color: 'neutral' },
-          { label: 'Figma → Code',      color: 'neutral' },
-        ].map(({ label, color }) => (
-          <span
-            key={label}
-            className={[
-              'text-xs font-medium px-3 py-1.5 rounded-full border transition-colors duration-200',
-              color === 'cyan'
-                ? 'bg-cyan-950/50 border-cyan-500/30 text-cyan-300 hover:border-cyan-400/60 hover:text-cyan-200'
-                : color === 'orange'
-                ? 'bg-orange-950/50 border-orange-500/30 text-orange-300 hover:border-orange-400/60 hover:text-orange-200'
-                : 'bg-white/5 border-white/10 text-gray-400 hover:border-white/20 hover:text-gray-300',
-            ].join(' ')}
-          >
-            {label}
-          </span>
-        ))}
+      {/* Grouped skill cards */}
+      <div className='w-full max-w-4xl grid grid-cols-1 sm:grid-cols-2 gap-4'>
+        {skillGroups.map((group) => {
+          const styles = accentStyles[group.accent]
+          return (
+            <div
+              key={group.category}
+              className={`border ${styles.cardBorder} rounded-xl p-5 bg-white/[0.02]`}
+            >
+              <p className={`font-bold text-sm mb-3 ${styles.heading}`}>
+                {group.category}
+              </p>
+              <div className='flex flex-wrap gap-2'>
+                {group.skills.map((skill) => (
+                  <span
+                    key={skill}
+                    className={`text-xs font-medium px-3 py-1.5 rounded-full border transition-colors duration-200 ${styles.pill}`}
+                  >
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </div>
+          )
+        })}
       </div>
     </div>
   )

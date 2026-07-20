@@ -15,7 +15,7 @@ const HeroText = () => {
         viewport={{ once: true, amount: 0.3 }}
         className='lg:text-xl sm:text-lg uppercase text-cyan font-medium tracking-widest'
       >
-        Angular Developer · KCNA Certified
+        Angular Developer → Full-Stack Java Developer | KCNA Certified
       </motion.h2>
 
       {/* Name */}
@@ -37,9 +37,9 @@ const HeroText = () => {
         viewport={{ once: true, amount: 0.3 }}
         className='text-base mt-2 text-lightGrey max-w-lg leading-relaxed'
       >
-        I build production-ready Angular applications — from government-scale platforms
-        to client-facing SPAs. I understand how apps run in production, not just how
-        they look in the browser.
+        I build production-ready Angular applications that are scalable, maintainable, 
+        and user-focused. With experience delivering government-scale platforms and client-facing SPAs,
+         I'm now expanding into Java and Spring Boot to build robust end-to-end solutions.
       </motion.p>
 
       {/* CTA Buttons */}
