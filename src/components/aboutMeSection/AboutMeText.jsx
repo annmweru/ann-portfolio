@@ -13,7 +13,7 @@ I'm a software developer with over five years of experience building Angular app
 
 As a KCNA-certified professional, I understand cloud-native principles and how applications move from development to production, enabling me to collaborate effectively with backend and DevOps teams.
 
-Highlights of my experience include leading a zero-downtime migration from Angular 8-18, building complex approval workflows for a national land registry platform, improving API performance by 35%, and mentoring junior developers while serving as an interim team lead.
+Highlights of my experience include leading a zero-downtime migration from Angular 8-18, building complex approval workflows for a national land registry platform, and mentoring junior developers while serving as an interim team lead.
 
 I'm currently expanding into backend development with Java and Spring Boot while strengthening my skills in Docker, CI/CD, and Kubernetes. I'm seeking remote or Nairobi-based opportunities to build scalable, production-ready applications and continue growing as a full-stack developer.
 

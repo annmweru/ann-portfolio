@@ -13,7 +13,14 @@ const SingleProjects = ({ name, year, description, techStack, features, align, i
       className={`flex flex-col md:flex-row items-center gap-8 ${align === 'left' ? 'md:flex-row' : 'md:flex-row-reverse'}`}
     >
        <div className='w-full md:w-1/2 max-w-[480px] rounded-xl overflow-hidden border border-white/20 bg-black/20'>
-  <img src={image} alt={name} className='w-full h-auto object-contain' />
+  {/* <img src={image} alt={name} className='w-full h-auto object-contain' /> */}
+  <img
+  src={image}
+  alt={name}
+  className="w-full h-auto object-contain"
+  onLoad={() => console.log('IMAGE LOADED:', name, image)}
+  onError={() => console.log('IMAGE FAILED:', name, image)}
+/>
 </div>
       <div className='w-full md:w-3/5 text-left'> 
         {/* Project Title */}

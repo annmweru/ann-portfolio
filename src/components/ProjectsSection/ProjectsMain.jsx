@@ -5,9 +5,45 @@ import { motion } from 'framer-motion'
 import { fadeIn } from '../../../src/framerMotion/variants'
 
 const projects = [
+  {
+  name: 'VitalLink Triage',
+  year: '2026',
+  description:
+    'An offline-first paramedic triage intake application designed for field EMS use, enabling paramedics to capture and manage patient triage records reliably even when network connectivity is unavailable.',
+  techStack: 'React Native • Expo • TypeScript • Redux Toolkit • SQLite • Jest',
+  align: 'right',
+  image: '/images/vitallink.png',
+  link: null,
+  github: 'https://github.com/annmweru/VitalLink-Triage',
+  features:
+    ['Offline-First Architecture',
+     'SQLite Local Persistence',
+     'Redux Toolkit State Management',
+     'Patient Triage Intake',
+     'Reliable Data Capture',
+     'Jest Testing']
+},
+  {
+  name: 'Library Management System',
+  year: '2026',
+  description:
+    'A Java-based library management system for managing books, borrowing, returns, and availability, with database persistence and business-rule validation.',
+  techStack: 'Java • OOP • JDBC • MySQL • SQL • Exception Handling • Enums',
+  align: 'left',
+  image: '/images/library.png',
+  link: null,
+  github: 'https://github.com/annmweru/02-oop-library-management',
+  features:
+    ['Book Management',
+     'Borrow & Return Books',
+     'Book Availability Tracking',
+     'JDBC Database Connectivity',
+     'Custom Exception Handling',
+     'Enum-Based Status Management']
+},
       {
     name: 'Ardhisasa Land Portal',
-    year: '2022',
+    year: '2025',
     description: 
     'Contributed to Kenya’s national digital land management platform by developing scalable Angular features, integrating backend services, and improving workflows for land registration, ownership verification, and lease management.',
     techStack: 'Angular • TypeScript • Tailwind CSS • NgRx • Reactive Forms • REST API • RxJS  • Dialogs',
